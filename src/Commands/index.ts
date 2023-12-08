@@ -6,5 +6,5 @@ import { add } from "./add";
 export const commands: Command[] = [
     ping,
     add,
-    clear
+    clear,
 ]

@@ -1,9 +1,10 @@
 import { ping } from "./ping";
 import { Command } from "../types";
-import { clear } from "./clear";
+import { clear } from "./Delete/clear";
 import { add } from "./add";
 import { newchat } from "./Create/chat";
 import { newvoice } from "./Create/voice";
+import { compliment } from "./roast";
 
 export const commands: Command[] = [
     ping,
@@ -11,4 +12,5 @@ export const commands: Command[] = [
     clear,
     newchat,
     newvoice,
+    compliment,
 ]

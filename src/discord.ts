@@ -13,6 +13,8 @@ const client = new DiscordJS.Client({
   ],
 });
 
+const guilIds = [process.env.GUILD_ID, process.env.GUILD_ID_2];
+
 client.on("guildCreate", async (guild) => {
   console.log(`Joined a new guild: ${guild.name} (id: ${guild.id})`);
 });
@@ -23,10 +25,10 @@ client.on("ready", async () => {
 
   console.log(`${client.user?.displayName} is ready!`);
 
-  const channel = await client.channels.cache.get(process.env.CHANNEL_ID!);
-  if (channel && channel.isTextBased()) {
-    channel.send(`${client.user?.displayName} is ready!`);
-  }
+  // const channel = await client.channels.cache.get(process.env.CHANNEL_ID!);
+  // if (channel && channel.isTextBased()) {
+  //   channel.send(`${client.user?.displayName} is ready!`);
+  // }
 
   if (guild) {
     commands = guild.commands;

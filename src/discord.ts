@@ -10,6 +10,8 @@ const client = new DiscordJS.Client({
     IntentsBitField.Flags.Guilds,
     IntentsBitField.Flags.GuildMessages,
     IntentsBitField.Flags.MessageContent,
+    IntentsBitField.Flags.GuildMessageReactions,
+    IntentsBitField.Flags.DirectMessageReactions,
   ],
 });
 

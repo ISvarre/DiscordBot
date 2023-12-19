@@ -7,6 +7,7 @@ import { new_voice } from "./Create/voice";
 import { compliment } from "./roast";
 import { randomNumber } from "./randomNum";
 import { diceRoll } from "./dice";
+import { help } from "./help";
 
 export const commands: Command[] = [
   ping,
@@ -17,4 +18,5 @@ export const commands: Command[] = [
   compliment,
   randomNumber,
   diceRoll,
+  help,
 ];
